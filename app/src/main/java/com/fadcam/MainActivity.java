@@ -936,11 +936,14 @@ public class MainActivity extends AppCompatActivity {
         // Recording Start Shortcut
         Intent startRecordIntent = new Intent(this, RecordingStartActivity.class);
         startRecordIntent.setAction(Intent.ACTION_VIEW);
+        
+        // 快捷方式默认使用前置摄像头
+        startRecordIntent.putExtra(RecordingStartActivity.EXTRA_SHORTCUT_CAMERA_MODE, RecordingStartActivity.CAMERA_MODE_FRONT);
 
         ShortcutInfo startRecordShortcut = new ShortcutInfo.Builder(this, "record_start")
                 .setShortLabel(getString(R.string.start_recording))
                 .setLongLabel(getString(R.string.start_recording))
-                .setIcon(Icon.createWithResource(this, R.drawable.start_back_shortcut))
+                .setIcon(Icon.createWithResource(this, R.drawable.start_front_shortcut))
                 .setIntent(startRecordIntent)
                 .build();
 
