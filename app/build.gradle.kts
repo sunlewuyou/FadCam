@@ -28,7 +28,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.fadcam.idea"
+        applicationId = "com.fadcam"
         minSdk = 24
         targetSdk = 36
         versionCode = 39
