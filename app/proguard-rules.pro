@@ -29,6 +29,13 @@
 -keepattributes *Annotation*
 -dontwarn sun.misc.**
 
+# Enum 保留（Gson 反序列化必需）
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+    ** $VALUES;
+}
+
 # Application classes that will be serialized/deserialized over Gson
 -keep class com.fadcam.model.** { <fields>; }
 -keep class com.fadcam.data.** { <fields>; }
