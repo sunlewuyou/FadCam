@@ -457,7 +457,7 @@ public abstract class Constants {
         "Faditor_Merge_";
     public static final double RECORDING_COMPRESSION_FACTOR = 0.33;
 
-    public static final CameraType DEFAULT_CAMERA_TYPE = CameraType.FRONT;
+    public static final CameraType DEFAULT_CAMERA_TYPE = CameraType.BACK;
     public static final Size DEFAULT_VIDEO_RESOLUTION = new Size(1920, 1080);
     public static final int DEFAULT_VIDEO_FRAME_RATE = 30;
     public static final float DEFAULT_ZOOM_RATIO = 1.0f; // Default zoom ratio (no zoom)
