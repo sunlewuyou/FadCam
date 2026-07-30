@@ -171,6 +171,6 @@
 -keep public class com.fadcam.FadCamApplication { *; }
 
 # Aggressive optimization settings
--repackageclasses ''
+# -repackageclasses ''
 # -flattenpackagehierarchy '' # Removed: conflicts with -repackageclasses
--mergeinterfacesaggressively
+# -mergeinterfacesaggressively
